@@ -2,7 +2,7 @@ export const items = [
   {
     id: 1,
     name: "Mens Waterproof Jacket",
-    price: 25,
+    price: 2500,
     imgPath: require("./assets/images/waterproof-jacket.jpg"),
     gallery: [
       { id: 1, imgPath: require("./assets/images/waterproof-jacket.jpg") },
@@ -16,7 +16,7 @@ export const items = [
   {
     id: 2,
     name: "Black Military Shirt",
-    price: 30,
+    price: 3000,
     imgPath: require("./assets/images/black-military-shirt.jpg"),
     gallery: [
       { id: 1, imgPath: require("./assets/images/black-military-shirt.jpg") },
@@ -31,7 +31,7 @@ export const items = [
   {
     id: 3,
     name: "Womens Formal Dress",
-    price: 28,
+    price: 2800,
     imgPath: require("./assets/images/womens-formal-dress.jpg"),
     gallery: [
       { id: 1, imgPath: require("./assets/images/womens-formal-dress.jpg") },
@@ -45,7 +45,7 @@ export const items = [
   {
     id: 4,
     name: "Mens Autumn Jacket",
-    price: 29,
+    price: 2900,
     imgPath: require("./assets/images/mens-jacket-autumn.jpg"),
     gallery: [
       { id: 1, imgPath: require("./assets/images/mens-jacket-autumn.jpg") },
@@ -59,7 +59,7 @@ export const items = [
   {
     id: 5,
     name: "Womens Summer Dress",
-    price: 35,
+    price: 3599,
     imgPath: require("./assets/images/summer-dresses-one-shoulderr-ruffles.jpg"),
     gallery: [
       {
@@ -79,7 +79,7 @@ export const items = [
   {
     id: 6,
     name: "Casual Mens Jacket",
-    price: 30,
+    price: 3000,
     imgPath: require("./assets/images/casual-mens-jacket.jpg"),
     gallery: [
       { id: 1, imgPath: require("./assets/images/casual-mens-jacket.jpg") },
@@ -94,7 +94,7 @@ export const items = [
   {
     id: 7,
     name: "Size Cotton Bed Sheet",
-    price: 40,
+    price: 4500,
     imgPath: require("./assets/images/size-cotton-bed-sheet.jpg"),
     gallery: [
       { id: 1, imgPath: require("./assets/images/size-cotton-bed-sheet.jpg") },
@@ -108,7 +108,7 @@ export const items = [
   {
     id: 8,
     name: "Sleeved Shirt",
-    price: 25,
+    price: 2500,
     imgPath: require("./assets/images/sleeved_shirt.jpg"),
     gallery: [
       { id: 1, imgPath: require("./assets/images/sleeved_shirt.jpg") },
@@ -122,7 +122,7 @@ export const items = [
   {
     id: 9,
     name: "Casual Two Piece Coat",
-    price: 36,
+    price: 3600,
     imgPath: require("./assets/images/Sheath-O-Neck-Mini-Dress-Casual-Coat-Two-Pieces.jpg"),
     gallery: [
       {
@@ -142,7 +142,7 @@ export const items = [
   {
     id: 10,
     name: "Woman Dress Pocket",
-    price: 25,
+    price: 2500,
     imgPath: require("./assets/images/Women-Dresses-With-Pocket-Solid-Color-Long-Sleeve.jpg"),
     gallery: [
       {
@@ -162,7 +162,7 @@ export const items = [
   {
     id: 11,
     name: "Global Village BedSheet",
-    price: 20,
+    price: 2000,
     imgPath: require("./assets/images/global-village-bed-sheet.jpg"),
     gallery: [
       {
@@ -182,7 +182,7 @@ export const items = [
   {
     id: 12,
     name: "Kids Toddler Cloth",
-    price: 10,
+    price: 100,
     imgPath: require("./assets/images/kids-toddler-cloth.jpg"),
     gallery: [
       { id: 1, imgPath: require("./assets/images/kids-toddler-cloth.jpg") },
@@ -196,7 +196,7 @@ export const items = [
   {
     id: 13,
     name: "Men Formal Business Vest Jacket",
-    price: 24,
+    price: 2400,
     imgPath: require("./assets/images/Men-Formal-Business-Vest-Jacket.jpg"),
     gallery: [
       {
@@ -216,7 +216,7 @@ export const items = [
   {
     id: 16,
     name: "Ellesse Hoodie",
-    price: 30,
+    price: 3000,
     imgPath: require("./assets/images/ellesse_hoodie.jpg"),
     gallery: [
       { id: 1, imgPath: require("./assets/images/ellesse_hoodie.jpg") },

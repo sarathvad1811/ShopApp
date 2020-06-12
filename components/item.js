@@ -39,7 +39,7 @@ export default class Item extends React.Component {
           }}
         >
           <Text style={{ fontSize: 12, color: "#b63838" }}>{name}</Text>
-          <Text style={{ fontSize: 14 }}>${price}</Text>
+          <Text style={{ fontSize: 14 }}>Rs. {price}</Text>
         </View>
       </View>
     );

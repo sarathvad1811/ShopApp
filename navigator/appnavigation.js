@@ -3,6 +3,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
 import HomeScreen from "../screens/homescreen";
 import CartScreen from "../screens/cartscreen";
+import ItemScreen from "../screens/itemscreen";
 import HeaderIcon from "../components/headerIcon";
 
 const AppStackNavigator = createStackNavigator();
@@ -23,6 +24,16 @@ export default class AppNavigator extends Component {
             })}
           />
           <AppStackNavigator.Screen name="Cart" component={CartScreen} />
+          <AppStackNavigator.Screen
+            name="Item"
+            component={ItemScreen}
+            options={({ route }) => ({
+              title: route.params.item.name,
+              headerBackTitle: "Back",
+              headerStyle: { backgroundColor: "#33CEFF", height: 90 },
+              headerTintColor: "#fff"
+            })}
+          />
         </AppStackNavigator.Navigator>
       </NavigationContainer>
     );

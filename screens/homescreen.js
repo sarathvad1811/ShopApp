@@ -19,7 +19,7 @@ class HomeScreen extends Component {
     const { navigation } = this.props;
 
     return (
-      <TouchableOpacity onPress={() => navigation.navigate("Cart")}>
+      <TouchableOpacity onPress={() => navigation.navigate("Item", { item })}>
         <View
           style={{
             paddingHorizontal: 10,
