@@ -46,6 +46,9 @@ class ItemScreen extends React.Component {
       sold,
       quantity
     } = this.state.currentItem;
+
+    const { isAlreadyInCart } = this.props;
+
     return (
       <SafeAreaView style={{ flex: 1, backgroundColor: "#808080" }}>
         <ScrollView>
@@ -218,12 +221,6 @@ class ItemScreen extends React.Component {
                   onPress={() => {
                     this.props.addItemToCart(this.state.currentItem);
                   }}
-                  disabled={
-                    this.props.isAlreadyInCart ||
-                    this.state.currentItem.quantity >= 1
-                      ? false
-                      : true
-                  }
                 >
                   <Text
                     style={{
@@ -234,7 +231,7 @@ class ItemScreen extends React.Component {
                       paddingBottom: sizes.padding - 10
                     }}
                   >
-                    Add to Cart
+                    {!isAlreadyInCart ? "Add to Cart" : "Added to Cart"}
                   </Text>
                 </TouchableOpacity>
               </View>
@@ -247,12 +244,16 @@ class ItemScreen extends React.Component {
 }
 
 const mapStateToProps = (state, ownProps) => {
-  const cartIndex = state.cartItems.findIndex(
-    cartItem => ownProps.id == cartItem.id
-  );
-  return {
-    isAlreadyInCart: cartIndex != -1 ? true : false
-  };
+  if (state.length > 0) {
+    const cartIndex = state.findIndex(
+      cartItem => ownProps.route.params.item.id == cartItem.id
+    );
+    return {
+      isAlreadyInCart: cartIndex != -1 ? true : false
+    };
+  }
+
+  return {};
 };
 
 const mapDispatchToProps = dispatch => {
@@ -262,7 +263,7 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(null, mapDispatchToProps)(ItemScreen);
+export default connect(mapStateToProps, mapDispatchToProps)(ItemScreen);
 
 const styles = StyleSheet.create({
   title: {
