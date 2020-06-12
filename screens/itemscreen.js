@@ -14,7 +14,6 @@ import {
 import StarRating from "react-native-star-rating";
 import { sizes } from "../constants/Theme";
 import { connect } from "react-redux";
-import cartItems from "../reducers/cartItems";
 
 const { width, height } = Dimensions.get("window");
 
